@@ -40,9 +40,17 @@ Requirements:
 - C++17 compiler
 - CMake 3.16 or newer
 
-Configure and build:
+Build without using `ccmake`:
 
 ```bash
+cmake -S . -B build
+cmake --build build
+```
+
+To configure from a clean build directory, remove the existing directory first:
+
+```bash
+rm -rf build
 cmake -S . -B build
 cmake --build build
 ```
