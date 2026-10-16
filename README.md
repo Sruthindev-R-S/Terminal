@@ -38,9 +38,24 @@ On Linux, press `Ctrl+D` on an empty line to finish entering text. The text is t
 Requirements:
 
 - C++17 compiler
-- CMake 3.16 or newer
 
-Build without using `ccmake`:
+### Manual Build Without CMake
+
+Compile the program directly with `g++`:
+
+```bash
+g++ -std=c++17 -I. main.cpp -o command_runner
+```
+
+Run the manually built program:
+
+```bash
+./command_runner
+```
+
+### Build With CMake
+
+Build from the command line without using `ccmake`:
 
 ```bash
 cmake -S . -B build
