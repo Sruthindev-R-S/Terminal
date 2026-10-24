@@ -31,7 +31,7 @@ This is the second line.
 This is the third line.
 ```
 
-On Linux, press `Ctrl+D` on an empty line to finish entering text. The text is then written to the requested file.
+Enter `END` on its own line to finish entering text. The `END` marker is not written to the file.
 
 ## Build
 

@@ -37,6 +37,9 @@ class WriteFile : public BaseCommand {
             }
 
             while (std::getline(std::cin, line)) {
+                if (line == "END") {
+                    break;
+                }
                 text.push_back(line);
             }
         }
